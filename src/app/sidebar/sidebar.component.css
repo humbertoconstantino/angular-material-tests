@@ -1,0 +1,46 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.links{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+.links a{
+  margin-right: 1rem;
+}
+
+.welcome h1{
+  margin-right: 1rem;
+}
+
+@media (min-width: 768px){
+  mat-sidenav{
+    display: none;
+  }
+}
+
+@media (max-width: 640px){
+  .welcome{
+    display: none;
+  }
+  .links{
+    display: none;
+  }
+}
